@@ -28,7 +28,7 @@ else if(input1 == "paper") {
     }
 }
 
-else if(input1 == "sscissor") {
+else if(input1 == "scissor") {
     if(input2 == "paper") {
         document.body.querySelector(".output").textContent = "You win, Scissor beats Paper";
     }
