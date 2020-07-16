@@ -1,12 +1,14 @@
 var inputFromUser = prompt("Enter Rock, Paper or Scissor");
 var randomSelection = Math.floor(Math.random() * 2) + 1;
 var randomSelected = computerPlay(randomSelection);
+var input1 = inputFromUser.toLowerCase();
+var input2 = randomSelected.toLowerCase();
 
-if(inputFromUser == "Rock") {
-    if(randomSelected == "Paper") {
+if(input1 == "rock") {
+    if(input2 == "paper") {
         document.body.querySelector(".output").textContent = "Oops Paper beats Rock";
     }
-    else if(randomSelected == "Scissor") {
+    else if(input2 == "scissor") {
         document.body.querySelector(".output").textContent = "You Win, Rocks beat Scissor";
     }
     else {
@@ -14,11 +16,11 @@ if(inputFromUser == "Rock") {
     }
 } 
 
-else if(inputFromUser == "Paper") {
-    if(randomSelected == "Scissor") {
+else if(input1 == "paper") {
+    if(input2 == "scissor") {
         document.body.querySelector(".output").textContent = "Oops Scissor beats Paper";
     }
-    else if(randomSelected == "Rock") {
+    else if(input2 == "rock") {
         document.body.querySelector(".output").textContent = "You Win, Paper beat Rock";
     }
     else {
@@ -26,11 +28,11 @@ else if(inputFromUser == "Paper") {
     }
 }
 
-else if(inputFromUser == "Scissor") {
-    if(randomSelected == "Paper") {
+else if(input1 == "sscissor") {
+    if(input2 == "paper") {
         document.body.querySelector(".output").textContent = "You win, Scissor beats Paper";
     }
-    else if(randomSelected == "Rock") {
+    else if(input2 == "rock") {
         document.body.querySelector(".output").textContent = "Oops, Rock beat Scissor";
     }
     else {
